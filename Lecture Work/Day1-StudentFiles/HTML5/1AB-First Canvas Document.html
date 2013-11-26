@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Our First Canvas</title>
+		<style type="text/css">
+			#canvas_1{
+				border: dotted 3px black;
+				background-color: #999;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var dom = {can1: document.getElementById("canvas_1")};
+//				dom.can1.width = 160;
+//				dom.can1.height= 150;
+				if(dom.can1 && dom.can1.getContext('2d')){
+					var ctx = dom.can1.getContext('2d');
+					if(ctx){
+						//draw here
+						
+						//Draw a stroked rectangle
+						ctx.strokeStyle = '#79D';
+						ctx.lineWidth = 5;
+						//ctx.strokeRect(posX, posY, width, height)
+						ctx.strokeRect(25,25,100,125);
+						
+						//Draw a filled rectangle
+						ctx.fillStyle = '#497';
+						ctx.fillRect(150,25,100,125);
+						
+						//Draw a filled & stroked rectangle
+						ctx.strokeStyle = '#E85';
+						ctx.fillStyle = '#FF5';
+						ctx.lineWidth = 10;
+						ctx.fillRect(275, 25, 100, 125);
+						ctx.strokeRect(275, 25, 100, 125);
+						
+						//Clearing a rectangle
+						ctx.clearRect(15,75,450,50);
+					}
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>First Canvas Example</h1>
+		<p>This document contains our first canvas example</p>
+		
+		<canvas id="canvas_1" width="400" height="300">Your Browser Doesn't Support Canvas</canvas>
+	</body>
+</html>
