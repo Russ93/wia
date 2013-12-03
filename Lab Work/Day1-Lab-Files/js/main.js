@@ -44,7 +44,10 @@ Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
+
 window.onload = function() {
+if(Modernizr.canvas){
+	console.log('I support canvas');
 	if (dom.can1 && dom.can1.getContext){
 		var ctx = dom.can1.getContext('2d');
 		if (ctx){
@@ -92,7 +95,6 @@ Use the arc method
 			ctx2.fill();
 		}
 	}
-
 
 
 
@@ -158,13 +160,12 @@ Do not overlap any other object.
             ctx4.lineWidth=3;
             ctx4.beginPath();
             ctx4.arc(umX,umY,100,0,(Math.PI/180)*180,true);
-            //bezierCurveTO(cx1,cy1,cx2,cy2, x, y) 200
-            ctx4.bezierCurveTo(50,92.5,75,92.5,85,112.5);
-            ctx4.bezierCurveTo(95,92.5,120,92.5,130,112.5);
-            ctx4.bezierCurveTo(145,92.5,165,92.5,175,112.5);
-            ctx4.bezierCurveTo(185,92.5,210,92.5,215,112.5);
-            ctx4.bezierCurveTo(220,92.5,240,92.5,250,112.5);
-            ctx4.fill();
+            ctx4.bezierCurveTo(umX-100,umY-20,umX-75,umY-20,umX-65,umY); //(50,92.5,75,92.5,85,112.5)
+            ctx4.bezierCurveTo(umX-60,umY-20,umX-30,umY-20,umX-20,umY); //(95,92.5,120,92.5,130,112.5)
+            ctx4.bezierCurveTo(umX-5,umY-20,umX+15,umY-20,umX+25,umY); //(145,92.5,165,92.5,175,112.5)
+            ctx4.bezierCurveTo(umX+35,umY-20,umX+60,umY-20,umX+65,umY); //(185,92.5,210,92.5,215,112.5)
+            ctx4.bezierCurveTo(umX+70,umY-20,umX+90,umY-20,umX+100,umY); //(220,92.5,240,92.5,250,112.5)
+            ctx4.fill(); //(Numbercp1x,Numbercp1y,Numbercp2x,Numbercp2y,Numberx,Numbery)
             ctx4.stroke();
 		}
 	}
@@ -234,11 +235,37 @@ You must use at least 3 different methods.
 	if (dom.can7 && dom.can7.getContext){
 		var ctx7 = dom.can7.getContext('2d');
 		if (ctx7){
-			//Styles
+            umX = dom.can7.width/2 // 150
+            umY = dom.can7.height/2; // 112.5
+            //Fill Rect
+            ctx7.fillStyle = '#BCE';
+            ctx7.fillRect(0,0,dom.can7.width,dom.can7.height);
+            //Clear Rect
+            ctx7.clearRect(250,umY-20,200,umY+20);
+            //Umbrella
 			ctx7.fillStyle = '#076BB6';
-			
-			//Rectangle
-			ctx7.fillRect(20,20,50,100);
+			ctx7.beginPath();
+            ctx7.arc(umX,umY,100,0,(Math.PI/180)*180,true);
+            ctx7.bezierCurveTo(umX-100,umY-20,umX-75,umY-20,umX-65,umY); 
+            ctx7.bezierCurveTo(umX-60,umY-20,umX-30,umY-20,umX-20,umY);
+            ctx7.bezierCurveTo(umX-5,umY-20,umX+15,umY-20,umX+25,umY);
+            ctx7.bezierCurveTo(umX+35,umY-20,umX+60,umY-20,umX+65,umY);
+            ctx7.bezierCurveTo(umX+70,umY-20,umX+90,umY-20,umX+100,umY);
+            ctx7.fill();
+            ctx7.stroke();
+            //Text
+            ctx7.fillStyle = '#333';
+            ctx7.font = '18pt Avenir';
+			ctx7.fillText('Rain I guess XD', 10,50);
 		}
 	}
+}
+// if canvas doesn't work.
+else{
+
+	//FallBack
+	//Polyfill
+	//Shiv
+
+}
 }})();
