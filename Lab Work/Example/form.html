@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Title</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='assets/style.css' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="assets/tipsy.js"></script>
+	<!--***** Scripts *****-->
+</head>
+<body>
+<div id="focus-example" class="example">
+    <select name="title" original-title="Select title">
+      <option>Mr</option>
+      <option>Mrs</option>
+      <option>Miss</option>
+    </select><br>
+    <input type="text" name="forename" original-title="Enter forename"><br>
+    <input type="text" name="surname" original-title="Enter surname"><br>
+    <textarea name="message" style="margin:0" original-title="Enter your message"></textarea>
+    <button>Send</button>
+  </div>
+	<script>
+        $(function() {
+            $('#focus-example [original-title]').tipsy({trigger: 'focus', gravity: 'w'});
+          });
+	</script>
+</body>
+</html>

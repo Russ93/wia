@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <title>HTML5 VideoExample</title>
+
+    </head>
+
+    <body>
+        <!--
+            Video Attributes
+
+            width - controls how wide it is - also scales
+            height - how tall
+
+            control - display the play/stop buttons
+            autoplay -- immediently plays the file when the page is loaded
+            poster - path to an images that will show before the video
+        -->
+        <video src='video/video.mp4' width='400' controls poster='images/posterImage.jpg'>
+
+        </video>
+        <br>
+        <!-- To Support all browsers- create a <source> tag -->
+        <video width="400" controls>
+            <!-- browser will try all of the following in order and if nothing works then fallback content-->
+            <source src='video/video.mp4' type='video/mp4'></sourcesrc>
+            <source src='video/video.ogv' type='video/ogg'></sourcesrc>
+            <embed src='video/flash-video.flv' width ='400' height='225' allowscriptaccess='always' allowfullscreen="true"></embed>
+            Your browser must really suck to not suport anything
+        </video>
+
+    </body>
+
+</html>
+
+
