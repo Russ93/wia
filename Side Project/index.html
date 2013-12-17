@@ -9,6 +9,7 @@
 	<!--***** Styles *****-->
 	<script src="j/modernizr.js"></script>
 	<script src="j/jq.js"></script>
+	<script src="j/chart.js"></script>
 	<script src="j/m.js"></script>
 	<!--***** Scripts *****-->
 </head>
@@ -18,11 +19,11 @@
 		<div class="wrap">
 			<h3>Russell <strong>Schlup</strong></h3>
 			<ul>
-				<li>About Me</li>
-				<li>Work</li>
-				<li>Hobbies</li>
-				<li>What I'm like</li>
-				<li>Contact Me</li>
+                <li>Contact Me</li>
+                <li>What I'm like</li>
+                <li>Hobbies</li>
+                <li>Work</li>
+                <li>About Me</li>
 			</ul>
 		</div>
 	</nav>
@@ -35,7 +36,7 @@
 				<p>I am <span class="age">20</span> year old innovator from San Diego, California: Skilled, Inspiring and, Friendly. I'm passionate and I love create beautiful and useful things and drinking coffee</p>
 				<p>Simplistic style. Typography and Color enthusiast. Love learning new code and ways of doing things.</p>
 				<button>Russell Benton on Facebook</button>
-				<button>Profile on LinkedIn</button>
+				<button class='linkedIn'>Profile on LinkedIn</button>
 			</section>
 		</div>
 	</header>
@@ -48,7 +49,7 @@
 			<h3 class="quote"> Programs must be written for people to read, and only incidentally for machines to execute.</h3>
 			<p>Through my work, I love to <strong>give emotion to things</strong> I do — make them alive — I take care of every detail rigorously. Well, I remain committed to good practices and modern working methods.</p>
 			<p>I love making the <strong>Cleanest code</strong> I can possible with the limitations of the W3C's Standards.</p>
-			<button>Professional Life - Linked In</button>
+			<button class='linkedIn'>Professional Life - Linked In</button>
 			<button>Personal Life - Facebook</button>
 		</section>
 		<aside>
@@ -64,16 +65,44 @@
 	</div>
 	
 	<div class="wrap">
-		<section>
-			<h2>Things I can do</h2>
-			<ul>
-				<li>XHTML, HTML5, CSS2.1, CSS3</li>
-				<li>Responsive Design, Grid System, Bootstrap, Foundation</li>
-				<li>JavaScript, jQuery, jQuery UI, jQuery Mobile</li>
-				<li>PHP5, AJAX</li>
-			</ul>
-		</section>
+        <section class='dW'>
+            <canvas id="canvas" height='526px' width='526px'></canvas>
+            <img id='canvasImg' />
+            <article>
+                <h2>Things I can do</h2>
+                <h3 class='things'>60% Front-End Devloper <span class='design'>40% Design</span></h3>
+                <ul>
+                    <li>XHTML, HTML5, CSS2.1, CSS3</li>
+                    <li>Responsive Design, Grid System, Bootstrap, Foundation</li>
+                    <li>JavaScript, jQuery, jQuery UI, jQuery Mobile</li>
+                    <li>Ember, Backbone, AngularJS, PHP5, AJAX</li>
+                    <li>Git, SVN</li>
+                    <li>Web Design, Mobile Design</li>
+                    <li>Photoshop, Illustrator</li>
+                    <li>OSX, Windows, Linux (KDE & GTK+)</li>
+                </ul>
+            </article>
+        </section>
 	</div>
+    <div class='wrap'>
+        <section class='notWork'>
+            <h2>What I do when I'm not working</h2>
+            <ul>
+                <li>
+                    <img src=''/>
+                    <figcaption>I work with a charity that takes webdevelopers and designers to build website for non-profit organizations</figcaption>
+                </li>
+                <li>
+                    <img src=''/>
+                    <figcaption>I also spend my time helping another non-profit charity that helps do many things.</figcaption>
+                </li>
+                <li>
+                    <img src=''/>
+                    <figcaption>I also run a site for a non-profit charity that builds orphanages for homless children in south america name SafeHouse Movement.</figcaption>
+                </li>
+            </ul>
+        </section>
+    </div>
 	
 	<footer>
 	

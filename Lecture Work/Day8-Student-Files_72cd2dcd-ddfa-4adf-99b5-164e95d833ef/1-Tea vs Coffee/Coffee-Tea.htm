@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Animating an Element</title>
+    <script type="text/javascript" src="includes/jquery-1.9.1.js"></script>
+    <style type="text/css">
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+        #coffee{
+            width: 50px;
+            height: 50px;
+            background:#6db3f2 url('images/coffeepot-white.png');
+            display:inline-block;
+        }
+        #tea{
+            width: 50px;
+            height: 50px;
+            background:#d82ad8 url('images/teapot-white.png');
+            display:inline-block;
+        }
+        .coffeeLabel{
+            background: #6db3f2;
+            display: inline-block;
+            padding: 11px;
+            font-size:24px;
+            color: #fff;
+            vertical-align: top;
+        }
+        .teaLabel{
+            background: #d82ad8;
+            display: inline-block;
+            padding: 8px;
+            font-size:24px;
+            color: #fff;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h2>Coffee vs Tea</h2>
+    <button id='moveIt'>Animate Graphic</button>
+   <p>Coffee</p>
+    <div id='coffee'></div>
+    <div id='coffeeNumber' class='coffeeLabel'>600</div>
+    <br />
+    <p>Tea</p>
+    <div id='tea'></div>
+    <div id='teaNumber' class='teaLabel'>300</div>
+    <script type="text/javascript" src="js/Tea.js"></script>
+      
+</body>
+</html>

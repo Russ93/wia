@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drawing SVGs</title>
+
+</head>
+
+<body>
+    <h1>Drawing SVGs</h1>
+    <p>This example will show how to draw using an SVG.</p>
+
+    <!--Create an SVG tag and give it a baisic height and width  -->
+    <svg width='250px' height='250'>
+
+       <!--    Create a rectrangle <rect x y width height> -->
+        <rect 
+              x='50' 
+              y='50' 
+              width='100' 
+              height='100' 
+              fill='#076BB6 ' 
+              stroke='#E66665' 
+              stroke-width = '5px' 
+              id='myRect' 
+              class='chart'
+              rx ='8'
+              ry = '8'
+              />
+        <!--    Circle use <circle cy cy r>    -->
+        <circle
+                cx = '100'
+                cy = '100'
+                r = '40'
+                fill = '#FFD602'
+                stroke = '#333'
+                stroke-width = '2'
+                />
+    </svg>
+    <br />
+    <svg width='300' height='300'>
+        <!--    Ellipse<elipse cx cy rx ry>    -->
+        <ellipse
+                 cx ='150'
+                 cy='100'
+                 rx='100'
+                 ry='50'
+                 style= 'fill: #FFD602; stroke: #7F7EA8; stroke-width: 6;'
+         />
+        <!-- Draw al ine <line x1 y1 x2 y2>  -->
+        <line
+              x1='0'
+              y1='0'
+              x2='300'
+              y2='300'
+              style = 'stroke: #F47D43; stroke-width: 2;'
+    </svg>
+</body>
+
+</html>

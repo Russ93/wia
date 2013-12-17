@@ -28,4 +28,21 @@
             });
         }
     });
+    //------------------------------ Canvas Scripting ------------------------------//
+    $(function() {
+	var canvas= document.getElementById("canvas"),
+        ctx =canvas.getContext("2d"),
+        data = [
+            {value: 40,color: "#076BB6"},
+            {value : 60,color : "#ACCBE8"}
+        ],
+    options = { onAnimationComplete: done};
+    new Chart(ctx).Doughnut(data,options);
+    
+    function done() {
+        var dataURL = canvas.toDataURL();
+        document.getElementById('canvasImg').src = dataURL
+        $('#canvas').hide()
+    }
+});
 })();

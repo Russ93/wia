@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width='300' height='300' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+
+    <polyline
+              points='0,40 40,40 40,80 80,80  80,120 120,120 120,160'
+              style='fill: none; stroke:#333; stroke-width:4;' 
+              />
+    <text
+          x='0'
+          y='15'
+          fill='red'>I love SVG</text>
+    <text
+          x='40'
+          y='70'
+          font-family= 'Lato'
+          font-size='55'
+          fill='#076BB6'>I love SVG</text>
+
+</svg>

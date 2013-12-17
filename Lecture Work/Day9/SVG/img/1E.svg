@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width='500' height='500' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+<!--
+    Command available
+    M= moveTo
+    L= lineTo
+    H= Horizontal linTo
+    V= Vertical lineTo
+    C= curveTo
+    S= smoothCurveTo
+    Q= quadraticBezier CurveTo
+    T= smooth quadraticBezier CurveTo
+    A= elliptical arc
+    Z= close path
+    caps - abosolute positioned
+    lowcase - relativly positioned
+-->
+    <path
+          d='M125 0 L50 100 L200 100 Z'
+          style='fill: #E66665; stroke:#333; stroke-width:4;'
+     />
+    <path
+          d='M100 350 Q250 50 400 350'
+          style='fill: none; stroke:#076BB6; stroke-width:5;'
+     />
+    
+<!--    Draw guidlines-->
+    <path
+          d='M100 350 L250 50 L400 350'
+          style='fill: none; stroke:#E66665; stroke-width:3;'
+     />
+    
+</svg>

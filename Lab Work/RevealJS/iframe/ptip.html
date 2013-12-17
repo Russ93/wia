@@ -12,8 +12,8 @@
 <body>
 	<div id="manual-example" class="example">
         <a rel="tipsy" original-title="Well hello there">My tooltip is manually triggered</a> |
-        <a href="#" onclick="$(&quot;#manual-example a[rel=tipsy]&quot;).tipsy(&quot;show&quot;); return false;">Show it</a> |
-        <a href="#" onclick="$(&quot;#manual-example a[rel=tipsy]&quot;).tipsy(&quot;hide&quot;); return false;">Hide it</a>
+        <a href="#" onclick="$('#manual-example a[rel=tipsy]').tipsy('show'); return false;">Show it</a> |
+        <a href="#" onclick="$('#manual-example a[rel=tipsy]').tipsy('hide'); return false;">Hide it</a>
   </div>
 	<script>
         $('#manual-example a[rel=tipsy]').tipsy({trigger: 'manual'});

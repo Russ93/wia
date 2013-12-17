@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SVG Animations</title>
+
+</head>
+
+<body>
+    <h1>SVG Animations</h1>
+    <p>This example will show how to animation properties of an SVG.</p>
+    <svg width='500' height='500'>
+        <circle cx='0' cy='50' r='30' fill='blue' dtroke='#333' stroke-width='1'>
+            <animate id='grow' attributeName='cx' from='0' to='500' dur='5s' repeatCount='indefinite' />
+            <animate id='grow2' begin='grow.end' attributeName='r' from='30' to='10' dur='1s' repeatCount='1' fill='freeze' />
+        </circle>
+<!--
+        <animate>
+                 attributeName - what we need to change
+                 from - beggineing value
+                 to-ending value
+                 dur - duration (s seconds ms milleseconds)
+                 repeat-count - # of times of a strings indefinite
+                 
+                 If freeze at the ending value-
+                 fill='freeze'
+                 begin='' seconds or to snother ending is ID
+-->
+        <circle cx='0' cy='100' r='30' fill='red' stroke='#333' stroke-width='1'>
+            <animate attributeName='cx' from='0' to='500' dur='5s' repeatCount='indefinite' />
+            <animate attributeName='r' values='30;10;30' dur='1s' repeatCount='indefinite' />
+        </circle>
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SVG Gradients</title>
+
+</head>
+
+<body>
+    <h1>SVG Gradients</h1>
+    <p>This example will show how to use gradients in an SVG.</p>
+    <svg width='500' height='500'>
+        <!--
+            <defs>
+                <linearGradient x1 y1 x2 y2>
+                x1, y1 starting and x1,y2 are ending points
+            </defs>
+            <stop offset= % style= color>
+-->
+        <defs>
+            <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+                <stop offset='0%' style='stop-color: #FFD602; stop-opacity:1' />
+                <stop offset='100%' style='stop-color: #E66665; stop-opacity:1' />
+            </linearGradient>
+        </defs>
+        <ellipse 
+                 cx='200' cy='70'
+                 rx='85' ry='55'
+                 fill='url(#grad1)'/>
+        <defs>
+            <radialGradient id='grad2' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'>
+                <stop offset='0%' style='stop-color: #eee; stop-opacity: .75;' />
+                <stop offset='100%' style='stop-color:#076BB6; stop:opacity:1;' />
+            </radialGradient>
+        </defs>
+        <ellipse 
+                 cx='200' cy='200'
+                 rx='85' ry='55'
+                 fill='url(#grad2)'/>
+    </svg>
+</body>
+
+</html>
