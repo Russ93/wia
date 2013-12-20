@@ -9,20 +9,24 @@
 	<!--***** Styles *****-->
 	<script src="j/modernizr.js"></script>
 	<script src="j/jq.js"></script>
+	<script src="j/cs.js"></script>
+	<script src="j/jrumble.js"></script>
 	<script src="j/chart.js"></script>
 	<script src="j/m.js"></script>
 	<!--***** Scripts *****-->
 </head>
 <body>
-	
+	<div id='easter'>
+    </div>
 	<nav>
 		<div class="wrap">
 			<h3>Russell <strong>Schlup</strong></h3>
 			<ul>
+                <li>?!</li>
                 <li>Contact Me</li>
                 <li>What I'm like</li>
                 <li>Hobbies</li>
-                <li>Work</li>
+                <li>Web Skills</li>
                 <li>About Me</li>
 			</ul>
 		</div>
@@ -41,7 +45,7 @@
 		</div>
 	</header>
 	
-	<div class="wrap">
+	<div class="wrap" id='about'>
 		<section>
 			<h2>Well who is this guy?</h2>
 			<p>I'm a <strong><span class="age">20</span> year old Caucasian</strong>, form southern California, who is passionate about his career. I am always inspired by <strong>Jeffery Zeldmann</strong>, Chris Coyier, <strong>Nicholas Zakas</strong>, and Scott Kellum. If you continue read my code you may learn a thing or two.</p>
@@ -64,48 +68,73 @@
 		</aside>
 	</div>
 	
-	<div class="wrap">
+	<div class="wrap" id='web'>
         <section class='dW'>
-            <canvas id="canvas" height='526px' width='526px'></canvas>
-            <img id='canvasImg' />
-            <article>
-                <h2>Things I can do</h2>
-                <h3 class='things'>60% Front-End Devloper <span class='design'>40% Design</span></h3>
-                <ul>
-                    <li>XHTML, HTML5, CSS2.1, CSS3</li>
-                    <li>Responsive Design, Grid System, Bootstrap, Foundation</li>
-                    <li>JavaScript, jQuery, jQuery UI, jQuery Mobile</li>
-                    <li>Ember, Backbone, AngularJS, PHP5, AJAX</li>
-                    <li>Git, SVN</li>
-                    <li>Web Design, Mobile Design</li>
-                    <li>Photoshop, Illustrator</li>
-                    <li>OSX, Windows, Linux (KDE & GTK+)</li>
-                </ul>
-            </article>
+            <h2>Web Skills</h2>
+            <ul id='skills'>
+                <li><label>Simple Front-end</label><dfn lvl='100'>(LVL <span>0</span>) XHTML, HTML5, CSS2.1, CSS3</dfn></li>
+                <li><label>CSS Framworks</label><dfn lvl='100'>(LVL <span>0</span>) Responsive Design, Grid System, Bootstrap, Foundation</dfn></li>
+                <li><label>Java and libs</label><dfn lvl='95'>(LVL <span>0</span>) JavaScript, jQuery, jQuery UI, jQuery Mobile</dfn></li>
+                <li><label>Java Frameworks</label><dfn lvl='78'>(LVL <span>0</span>) Ember, Backbone, AngularJS, PHP5, AJAX</dfn></li>
+                <li><label>Version Control</label><dfn lvl='95'>(LVL <span>0</span>) Git, SVN</dfn></li>
+                <li><label>Designing</label><dfn lvl='80'>(LVL <span>0</span>) Web Design, Mobile Design</dfn></li>
+                <li><label>Adobe Products</label><dfn lvl='85'>(LVL <span>0</span>) Photoshop, Illustrator, Indesign, Flash, Flash Builder, Premiere Pro</dfn></li>
+                <li><label>Operating Systems</label><dfn lvl='100'>(LVL <span>0</span>) OSX, Windows, Linux (KDE & GTK+)</dfn></li>
+                <li><label>Over Nighters</label><dfn lvl='9001'><span class='shake'>(LVL <span>0</span>)</span> Sleep Deprivation, Caffine, Passouts, Face Pamls, Mind Blown</dfn></li>
+            </ul>
         </section>
 	</div>
     <div class='wrap'>
         <section class='notWork'>
             <h2>What I do when I'm not working</h2>
-            <ul>
-                <li>
-                    <img src=''/>
-                    <figcaption>I work with a charity that takes webdevelopers and designers to build website for non-profit organizations</figcaption>
-                </li>
-                <li>
-                    <img src=''/>
-                    <figcaption>I also spend my time helping another non-profit charity that helps do many things.</figcaption>
-                </li>
-                <li>
-                    <img src=''/>
-                    <figcaption>I also run a site for a non-profit charity that builds orphanages for homless children in south america name SafeHouse Movement.</figcaption>
-                </li>
-            </ul>
+            <div id='carousel'>
+                    <img src="i/givecamp.jpg" alt="Flowers" />
+                    <span><b>Give Camp</b><br>I work with a charity that takes webdevelopers and designers to build website for non-profit organizations</span>
+                    <img src="i/puremotivation.jpg" alt="Flowers" />
+                    <span><b>Pure Motivation</b><br>I also spend my time helping another non-profit charity that helps do many things.</span>
+                    <img src='i/safehouse.png'/>
+                    <span><b>Safe House Movement</b><br>I also run a site for a non-profit charity that builds orphanages for homless children in south america name SafeHouse Movement.</span>
+            </div>
         </section>
     </div>
-	
+	<div class='wrap' id='wia'>
+        <section class='dW'>
+            <canvas id="canvas" height='526px' width='526px'></canvas>
+            <img id='canvasImg' />
+            <article>
+                <h2>Well what is this guy?</h2>
+                <h3>40% Developer</h3>
+                <h3>20% Designer</h3>
+                <h3>10% Gamer</h3>
+                <h3>10% Professionalism</h3>
+                <h3>5% Socializer</h3>
+                <h3>5% Caffine</h3>
+                <h3>No guarantee of 100% Human</h3>
+            </article>
+        </section>
+    </div>
 	<footer>
-	
+        <div class='wrap'>
+            <section class='dW'>
+                <h2>How Would I Contact this Person?</h2>
+                <ul>
+                    <li><h3>Connect</h3></li>
+                    <li><a href='http://www.linkedin.com/in/russ93' target='_blank'>Linked In</a></li>
+                    <li><a href='https://www.facebook.com/russbenton' target='_blank'>Facebook</a></li>
+                    <li><a href='https://plus.google.com/113876837486927764147/posts/p/pub' target='_blank'>Google+</a></li>
+                    <li><a href='https://twitter.com/russbenton93' target='_blank'>@russbenton93</a></li>
+                    <li><a href='https://github.com/Russ93' target='_blank'>Git Hub</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Non Internet</h3></li>
+                    <li>Phone: 760-960-7096</li>
+                    <li>Email: Russ93@fullsail.edu</li>
+                    <li>Address: 300 Prince Charles ln.</li>
+                    <li>Winter Park, Fl 32792</li>
+                </ul>
+                <h3>Or you could say HI sometime</h3>
+            </section>
+        </div>
 	</footer>
 </body>
 </html>
