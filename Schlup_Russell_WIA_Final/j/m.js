@@ -24,6 +24,11 @@
         //                    scrollTop: $('body .wrap:nth-child(5)').offset().top - 90
         //                }, 2000, 'swing')
         //            })
+        $('nav div.wrap h3').click(function () {
+            $("body").animate({
+                scrollTop: $('header').offset().top - 90
+            }, 2000, 'swing')
+        })
         $('nav ul li:contains(Web)').click(function () {
             $("body").animate({
                 scrollTop: $('#web').offset().top - 90
@@ -182,7 +187,7 @@
         }; //countTo
         //------------------------- ?! -------------------------//  
         $('ul li:contains(?!)').click(function () {
-            $('#easter').prepend("<h1>CODE SNIPPETS!!!!</h1><audio autoplay='autoplay'><source src='i/a.mp3' type='audio/mpeg'/><source src='i/a.ogg' type='audio/ogg'/></audio>")
+            $('#easter').prepend("<h1>CODE SNIPPETS!!!!</h1><audio autoplay='autoplay'><source src='i/a.mp3' type='audio/mpeg'/><source src='i/a6.ogg' type='audio/ogg'/></audio>")
             $('#easter').children('h1').jrumble()
             $('#easter').children('h1').trigger('startRumble')
             $(this).unbind()
